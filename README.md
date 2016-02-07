@@ -1,2 +1,2 @@
 # NicaTur
-Proyecto NicaTur en Ruby on Rails
+Proyecto NicaTur en Ruby on Rails!!
