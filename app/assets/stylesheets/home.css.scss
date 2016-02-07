@@ -1,0 +1,67 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img{
+  width: 350px;
+	height: 200px;
+}
+.mdl-demo
+{
+  padding: 40px 40px 40px 30px;
+
+}
+
+
+.parallax-window {
+    min-height: 200px;
+    background: transparent;
+}
+
+.mainContain{padding:40px;}
+
+#LogoT
+{
+width: 200px;
+height: 100px;
+
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.banner
+{
+	background-image: url('/assets/Ometepe.jpg');
+	min-height: 250px;
+}
+
+.content-grid {
+  max-width: 960px;
+}
+
+
+.mdl-button--file {
+  input {
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+  }
+}
+
+.mdl-textfield--file {
+  .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+  }
+  .mdl-button--file {
+    right: 0;
+  }
+}

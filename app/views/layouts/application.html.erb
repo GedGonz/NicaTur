@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RoRML</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+   <%= javascript_include_tag 'parallax' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">NicaTUR <!--<%= image_tag "Logotur.png",:title => "Uni", :id=>"LogoT"%>--></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="home/new">
+        <i class="material-icons">
+		add    
+        </i>
+        </a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons">settings_power</i></a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons">subject</i></a>
+        <a class="mdl-navigation__link" href=""><i class="material-icons">view_module</i></a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">TurNica</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+    <!--<div class="banner"></div>-->
+  <main class="mdl-layout__content">
+
+    <div class="page-content">
+
+     		<%= yield %>
+    </div>
+  </main>
+</div>
+
+
+
+
+</body>
+</html>

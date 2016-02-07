@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Titutlo: MyString
+  body: MyString
+  imag: MyString
+
+two:
+  Titutlo: MyString
+  body: MyString
+  imag: MyString

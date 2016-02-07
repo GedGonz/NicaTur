@@ -1,0 +1,94 @@
+<script type="text/javascript">
+  
+document.getElementById("uploadBtn").onchange = function () 
+{
+document.getElementById("uploadFile").value = this.files[0].name;
+};
+</script>
+
+<br>
+<br>
+
+
+
+
+<div class="mdl-grid">
+ 
+  <div class="mdl-cell mdl-cell--4-col">
+    <!-- add content here -->
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+      <div  class=" target mdl-cell">
+        <div class="mdl-demo mdl-card mdl-shadow--4dp">
+        <%= form_for(:articulo,:url => { :action => :creat}, multipart: true) do |f| %>
+          <div class="mdl-card__title ">
+          <h2 class="mdl-card__title-text">
+
+            <i class="material-icons mdl-color-text--grey m-r-5 lh-13">description</i>
+            Register Articulos
+          </h2>
+        </div>
+          <div class="mdl-textfield mdl-js-textfield">
+
+          <%=f.text_field(:Titulo,:class=>"mdl-textfield__input") %>
+          <label class="mdl-textfield__label" for="sample1">Titulo</label>
+          </div>
+
+          <div class="mdl-textfield mdl-js-textfield">
+          <%= f.text_area(:body,:class=>"mdl-textfield__input", size: "35x5") %>
+
+          <label class="mdl-textfield__label" for="sample1">Body</label>
+          </div>
+<!--
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+            <input class="mdl-textfield__input" placeholder="File" type="text" id="uploadFile" readonly/>
+            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+              <i class="material-icons">attach_file</i><input type="file" id="uploadBtn">
+            </div>
+          </div>
+-->
+          
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+          <%=f.text_field(:texto,:id=>"uploadFile",:class=>"mdl-textfield__input") %>
+          <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+              <i class="material-icons">attach_file</i>
+              <%=f.file_field(:Imag,:id=>"uploadBtn") %>
+            </div>
+          
+          </div>
+
+
+          <br>
+           <br>
+          <div class="mdl-card__actions mdl-card--border">
+      <%= f.submit({:id =>'btnAceptar',:class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent',:value=> 'Registrar'})%>
+              
+          </div>
+           <%end%>
+          </div>
+          
+     </div>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <!-- and probably also here -->
+  </div>
+ 
+</div>
+
+
+
+<!-- 
+        <div class="parallax-container">
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/Ometepe.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              <h4 class="header">Volcan Ometepe </h4>
+            </div>
+          </div>
+          <div class="parallax-container">
+              <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/VistaOmetepe.jpg">
+              </div>
+
+          </div>-->
