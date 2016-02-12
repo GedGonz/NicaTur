@@ -3,8 +3,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
+
+
+gem 'pg'
+
+gem 'rails_12factor', group: :production
 # Use sqlite3 as the database for Active Record
-gem 'mysql2','~> 0.3.20'
+#gem 'mysql2','~> 0.3.20'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,6 +31,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'material_design_lite-rails'
 
 gem 'google-api-client'
+
 
 #gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
